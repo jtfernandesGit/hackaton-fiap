@@ -64,7 +64,7 @@ jobs:
       - name: Deploy Backend no  Cloud Run
         id: deploy
         run: |-
-          gcloud run deploy backend \
+          gcloud run deploy backendpy \
             --quiet \
             --region  ${{ secrets.GOOGLE_REGION }} \
             --image ${{ secrets.ARTIFACT_REGISTRY_REPO }}/backendpy:latest \
